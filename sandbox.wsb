@@ -1,0 +1,13 @@
+<Configuration>
+    <vGPU>true</vGPU>
+    <MemoryInMB>8192</MemoryInMB>
+    <MappedFolders>
+		<MappedFolder>
+			<HostFolder>C:\WindowsSandbox\shared</HostFolder>
+			<ReadOnly>true</ReadOnly>
+		</MappedFolder>
+	</MappedFolders>
+	<LogonCommand>
+		<Command>powershell -executionpolicy unrestricted -command "start powershell {-file C:\Users\WDAGUtilityAccount\Desktop\shared\init.ps1}"</Command>
+	</LogonCommand>
+</Configuration>
